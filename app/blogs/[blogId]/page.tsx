@@ -1,3 +1,4 @@
+export const runtime = 'edge'
 import ButtonBack from "@/components/ButtonBack";
 import { getSortedBlogsData, getBlogData } from "@/lib/blogs";
 import { notFound } from "next/navigation";
