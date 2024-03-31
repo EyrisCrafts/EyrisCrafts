@@ -6,28 +6,54 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-rgb: 245, 245, 245
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.markdown h1 {
+  font-size: 2em;
+  font-weight: bold;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.markdown h2 {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.markdown h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.markdown h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.markdown h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+
+.markdown h6 {
+  font-size: 0.67em;
+  font-weight: bold;
+}
+
+.markdown p {
+  font-size: 1em;
+  font-weight: normal;
+  color: #434648
+}
+
+.markdown li {
+  list-style: disc;
+}
+
+.markdown ol li {
+  list-style: decimal;
+}
+
+.markdown ul {
+  font-size: 1em;
+  font-weight: normal;
 }
