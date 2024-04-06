@@ -7,11 +7,8 @@ import html from 'remark-html';
 
 import rehypeRaw from 'rehype-raw';
 import rehypeStringify from 'rehype-stringify';
-import { unified } from 'unified';
 import remarkRehype from 'remark-rehype';
 
-
-import { GetStaticProps } from "next";
 import {marked} from 'marked';
 
 const projectsDirectory = path.join(process.cwd(), 'projects');

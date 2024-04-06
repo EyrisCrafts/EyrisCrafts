@@ -1,3 +1,5 @@
+import ItemTechStack from "./ItemTech";
+
 interface Props {
     title: string;
     company: string;
@@ -26,9 +28,7 @@ export default function ItemExperience({title, company, location, date, descript
             {/* Tech stack */}
             <div className="flex flex-row gap-2">
                 {techStack.map((tech) => (
-                    <div key={tech} className="px-3 py-2 bg-white text-smol-bg text-xs font-semibold rounded dark:bg-slate-700">
-                        {tech}
-                    </div>
+                     <ItemTechStack key={tech} title={tech} />
                 ))}
             </div>
             
