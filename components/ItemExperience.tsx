@@ -26,7 +26,7 @@ export default function ItemExperience({title, company, location, date, descript
             {/* Description */}
             <div className="text-title-grey text-sm md:text-base" dangerouslySetInnerHTML={{__html: description}}></div>
             {/* Tech stack */}
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row flex-wrap gap-2">
                 {techStack.map((tech) => (
                      <ItemTechStack key={tech} title={tech} />
                 ))}
