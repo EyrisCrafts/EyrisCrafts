@@ -20,7 +20,7 @@ export default function Home() {
     <main className="max-w-screen-2xl mx-auto grid grid-cols-12 min-h-screen md:grid-cols-12 bg-grey-3 dark:bg-dark-1 transition duration-300">
       {/* Left Section - Larger, takes up the remaining space on mobile */}
       <section className="col-span-12 md:col-span-7 lg:col-span-9  order-last md:order-none ">
-        <section className="px-12 md:px-32 pt-20">
+        <section className="px-12 lg:px-32 pt-20">
           {/* Dark Mode */}
           <div className="flex flex-row ">
             <ButtonTheme />

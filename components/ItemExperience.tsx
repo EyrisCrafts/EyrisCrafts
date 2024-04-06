@@ -15,8 +15,8 @@ export default function ItemExperience({title, company, location, date, descript
         <div className="flex flex-col gap-3 mb-10">
             {/* Title and date on row */}
             <div className="flex flex-row justify-between">
-                <div className="text-title-grey font-bold text-lg">{title}</div>
-                <div className="text-date-grey">{date}</div>
+                <div className="text-title-grey font-bold text-base">{title}</div>
+                <div className="text-date-grey text-sm md:text-base">{date}</div>
             </div>
             {/* Company and location on row */}
             <div className="flex flex-row justify-between">
@@ -24,7 +24,7 @@ export default function ItemExperience({title, company, location, date, descript
                 <div className="text-date-grey">{location}</div>
             </div>
             {/* Description */}
-            <div className="text-title-grey" dangerouslySetInnerHTML={{__html: description}}></div>
+            <div className="text-title-grey text-sm md:text-base" dangerouslySetInnerHTML={{__html: description}}></div>
             {/* Tech stack */}
             <div className="flex flex-row gap-2">
                 {techStack.map((tech) => (

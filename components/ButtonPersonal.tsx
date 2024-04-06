@@ -18,7 +18,6 @@ export default function ButtonPersonal({  icon, text, link }: Props) {
       
     >
       {icon}
-        {/* <Image src={icon} alt="Image"/> */}
       {text}
     </button>
   );
