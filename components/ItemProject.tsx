@@ -1,6 +1,9 @@
 'use client';
+import { Project, useSelectedProjectStore } from "@/hooks/useSelectedProject";
 import ButtonProjectLink from "./ButtonProjectLink";
 import { useRouter } from "next/navigation";
+
+import { useState } from "react";
 
 interface ItemProjectProps {
     id: string;
@@ -16,17 +19,51 @@ interface ItemProjectProps {
 
 export default function ItemProject({ id, title, image, icon, description, linkBlog, linkGithub, linkRelease, linkPlaystore }: ItemProjectProps) {
     const router = useRouter();
+    const { setProject } = useSelectedProjectStore();
+    
     function handleProjectClick() {
-        console.log("Project Clicked");
-        // Navigate to project page
+        const selectedProject = new Project(
+            id,
+            "",
+            title,
+            image,
+            icon,
+            description,
+            linkBlog,
+            linkGithub,
+            linkPlaystore,
+            linkRelease,
+            ""
+            
+          );
+        setProject(selectedProject);
+        // console.log("Project Clicked");
+        // // Navigate to project page
         router.push(`/projects/${id}`);
     }
+
+    const [isHovering, setIsHovering] =  useState(false);
+
+    const onMouseEnter = () => {
+        setIsHovering(true);
+
+    };
+
+    const onMouseLeave = () => {
+        setIsHovering(false);
+
+    }
+
+
     
     return (
         <div onClick={handleProjectClick} className="h-72 flex flex-col p-4 rounded-md bg-card-bg w-64 shadow-project hover:cursor-pointer hover:shadow-projectHovered transition-shadow duration-300 dark:bg-slate-700">
             
-            <div className="flex justify-center mb-3">
+            <div className="flex justify-center mb-3 object-center " onPointerEnter={onMouseEnter} onPointerLeave={onMouseLeave}>
+               
+                
                 <img src={image} alt="Image" className="object-center max-w-full max-h-full" />
+               
             </div>
 
             <div className="flex gap-3">

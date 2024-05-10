@@ -1,5 +1,6 @@
 {
     "tech": [
+        "NextJS",
         "ReactJS",
         "Flutter",
         "NodeJS",
@@ -12,6 +13,11 @@
         "Docker",
         "Typescript",
         "Javascript",
-        "JAVA"
+        "JAVA",
+        "EnvoyProxy",
+        "TailwindCSS",
+        "bootstrap",
+        "Nginx",
+        "Vercel"
     ]
 }
