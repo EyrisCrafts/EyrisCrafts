@@ -4,6 +4,7 @@ date: 2020-04-10 11:58:47 +07:00
 description: A feature rich memes app
 icon: "/projects/memes-max/logo.png"
 image: "/projects/memes-max/bg.png"
+video: "/projects/memes-max/memesmax.mp4"
 linkPlaystore: "https://play.google.com/store/apps/details?id=com.eyriscrafts.memesmax"
 site: ""
 build: ""

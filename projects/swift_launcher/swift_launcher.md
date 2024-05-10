@@ -4,6 +4,7 @@ date: 2019-06-25 11:58:47 +07:00
 description: A feature rich android launcher in flutter
 icon: "/projects/swift-launcher/logo.png"
 image: "/projects/swift-launcher/bg.png"
+video: "/projects/swift-launcher/Swift Launcher.mp4"
 linkPlaystore: "https://play.google.com/store/apps/details?id=com.eyriscrafts.swiftlauncher"
 site: ""
 build: ""

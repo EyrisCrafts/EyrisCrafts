@@ -4,6 +4,7 @@ date: 2019-06-25 11:58:47 +07:00
 description: A Web app to test character prompts
 icon: "/projects/the-prompter/icon.png"
 image: "/projects/the-prompter/screenshot.png"
+video: "/projects/the-prompter/video.mov"
 linkPlaystore: ""
 site: "https://prompter.eyriscrafts.com/"
 build: ""

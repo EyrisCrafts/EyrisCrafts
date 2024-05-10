@@ -4,11 +4,13 @@ import ButtonProjectLink from "./ButtonProjectLink";
 import { useRouter } from "next/navigation";
 
 import { useState } from "react";
+import VideoPlayer from "./VideoPlayer";
 
 interface ItemProjectProps {
     id: string;
     title: string;
     image: string;
+    video?: string;
     icon: string;
     description: string;
     linkBlog?: string;
@@ -17,7 +19,7 @@ interface ItemProjectProps {
     linkPlaystore?: string;
 }
 
-export default function ItemProject({ id, title, image, icon, description, linkBlog, linkGithub, linkRelease, linkPlaystore }: ItemProjectProps) {
+export default function ItemProject({ id, title, image, video, icon, description, linkBlog, linkGithub, linkRelease, linkPlaystore }: ItemProjectProps) {
     const router = useRouter();
     const { setProject } = useSelectedProjectStore();
     
@@ -61,13 +63,14 @@ export default function ItemProject({ id, title, image, icon, description, linkB
             
             <div className="flex justify-center mb-3 object-center " onPointerEnter={onMouseEnter} onPointerLeave={onMouseLeave}>
                
-                
-                <img src={image} alt="Image" className="object-center max-w-full max-h-full" />
+                <VideoPlayer src={video} thumbnail={image} />
+                {/* <img src={image} alt="Image" className="object-center max-w-full max-h-full" /> */}
                
             </div>
 
             <div className="flex gap-3">
-                <img src={icon} alt="Image" className="object-contain w-6" />
+                
+                 <img src={icon} alt="Image" className="object-contain w-6" />
                 <p className="text-slate-500 dark:text-title-grey ">{title}</p>
             </div>
             <p className="text-xs text-title-grey mt-2">{description}</p>

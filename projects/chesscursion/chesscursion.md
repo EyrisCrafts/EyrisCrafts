@@ -4,6 +4,7 @@ date: 2020-01-25 11:58:47 +07:00
 description: A cool chess variant with puzzles
 icon: "/projects/chesscursion/logo.png"
 image: "/projects/chesscursion/bg.png"
+video: "/projects/chesscursion/Chesscursion.mp4"
 linkPlaystore: "https://play.google.com/store/apps/details?id=com.eyriscrafts.chesscursion"
 linkGithub: "https://github.com/EyrisCrafts/Chesscursion"
 linkRelease: ""

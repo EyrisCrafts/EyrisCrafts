@@ -41,12 +41,14 @@ export function getSortedProjectsData() {
           date: matterResult.data.date || '',
           title: matterResult.data.title || '',
           image: matterResult.data.image || '',
+          video: matterResult.data.video || '',
           icon: matterResult.data.icon || '',
           description: matterResult.data.description || '',
           linkBlog: matterResult.data.linkBlog || '',
           linkGithub: matterResult.data.linkGithub || '',
           linkPlaystore: matterResult.data.linkPlaystore || '',
           linkRelease: matterResult.data.linkRelease || ''
+          
         };
 
         return project;

@@ -14,6 +14,7 @@ export default function ListProjects() {
                     id = {project.id}
                     title={project.title}
                     image={project.image}
+                    video={project.video}
                     icon={project.icon}
                     description={project.description}
                     linkBlog={project.linkBlog}

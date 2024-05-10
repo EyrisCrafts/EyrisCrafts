@@ -4,6 +4,7 @@ date: 2023-03-25 11:58:47 +07:00
 description: Superior news app with advanced features
 icon: "/projects/advanced-news-app/logo.png"
 image: "/projects/advanced-news-app/bg.png"
+video: "/projects/advanced-news-app/PakNews.mp4"
 linkPlaystore: "https://play.google.com/store/apps/details?id=com.eyriscraft.dawn"
 linkGithub: ""
 linkRelease: ""
