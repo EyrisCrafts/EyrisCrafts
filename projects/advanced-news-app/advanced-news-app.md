@@ -1,11 +1,11 @@
 ---
-title: Dawn News
+title: Pak News
 date: 2023-03-25 11:58:47 +07:00
 description: Superior news app with advanced features
 icon: "/projects/advanced-news-app/logo.png"
 image: "/projects/advanced-news-app/bg.png"
 video: "/projects/advanced-news-app/PakNews.mp4"
-linkPlaystore: "https://play.google.com/store/apps/details?id=com.eyriscraft.dawn"
+linkPlaystore: "https://play.google.com/store/apps/details?id=com.eyriscraft.pakistannews"
 linkGithub: ""
 linkRelease: ""
 article: "http://eyriscrafts.com/projects/advanced-news-app/advanced-news-app"
@@ -18,9 +18,6 @@ article: "http://eyriscrafts.com/projects/advanced-news-app/advanced-news-app"
 A feature rich news reading app
 
 </div>
-
-<!-- <img src="/projects/advanced-news-app/logo.png" width='150px' alt="Dawn News">
-<h3>A feature rich news reading app</h3> -->
 
 <ul class="mb-10">
 <li>Dark Mode</li>

@@ -1,6 +1,6 @@
 ---
 title: Memax
-date: 2020-04-10 11:58:47 +07:00
+date: 2019-01-10 11:58:47 +07:00
 description: A feature rich memes app
 icon: "/projects/memes-max/logo.png"
 image: "/projects/memes-max/bg.png"
