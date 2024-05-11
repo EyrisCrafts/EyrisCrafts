@@ -23,7 +23,8 @@ const config: Config = {
         'blog-color': '#606060',
         'card-bg': '#FAFAFA',
         'smol-bg': '#A4A4A4',
-
+        'custom-bg': '#1B1C1F',
+        'custom-button-bg': "#0E0F11",
         // Dark Mode
         'dark-1': '#202124'
       },

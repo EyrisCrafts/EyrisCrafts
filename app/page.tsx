@@ -59,7 +59,7 @@ export default function Home() {
           className="rounded-full object-cover"
         />
 
-        <h1 className="text-lg text-grey-1">
+        <h1 className="text-lg text-grey-2">
           {" "}
           Waleed K. Nizamani
         </h1>
@@ -68,7 +68,7 @@ export default function Home() {
           Software engineer with a keen interest in economy, science, and gaming
         </p>
 
-        <p className="text-sm font-semibold text-date-grey" >
+        <p className="text-sm font-semibold text-gray-700" >
           More about me
         </p>
 

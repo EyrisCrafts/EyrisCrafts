@@ -15,7 +15,7 @@ export default function ButtonProjectLink({ title, link }: Props) {
     <div
       onClick={handleClick}
 
-      className="rounded-md card-bg transition duration-300 shadow-projectLink hover:shadow-projectLinkHovered px-3 py-1 text-xs font-bold text-smol-bg dark:bg-slate-800 dark:hover:bg-slate-900"
+      className="rounded-md card-bg transition duration-300 shadow-projectLink hover:shadow-projectLinkHovered px-3 py-1 text-xs font-bold text-smol-bg dark:bg-custom-button-bg dark:hover:bg-slate-900"
     >
       {title}
     </div>

@@ -59,7 +59,7 @@ export default function ItemProject({ id, title, image, video, icon, description
 
     
     return (
-        <div onClick={handleProjectClick} className="h-72 flex flex-col p-4 rounded-md bg-card-bg w-64 shadow-project hover:cursor-pointer hover:shadow-projectHovered transition-shadow duration-300 dark:bg-slate-700">
+        <div onClick={handleProjectClick} className="h-72 flex flex-col p-4 rounded-md bg-card-bg w-64 shadow-project hover:cursor-pointer hover:shadow-projectHovered transition-shadow duration-300 dark:bg-custom-bg">
             
             <div className="flex justify-center mb-3 object-center " onPointerEnter={onMouseEnter} onPointerLeave={onMouseLeave}>
                
