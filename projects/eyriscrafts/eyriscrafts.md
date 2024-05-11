@@ -4,10 +4,10 @@ date: 2019-06-25 11:58:47 +07:00
 description: A feature rich android launcher in flutter
 icon: "/projects/eyriscrafts/eggplant.webp"
 image: "/projects/eyriscrafts/screenshot.png"
-linkPlaystore: "https://play.google.com/store/apps/details?id=com.eyriscrafts.swiftlauncher"
+linkPlaystore: ""
 site: ""
 build: ""
-linkGithub: "https://github.com/EyrisCrafts/swiftlauncher"
+linkGithub: "https://github.com/EyrisCrafts/EyrisCrafts"
 article: "https://eyriscrafts.com/projects/eyriscrafts/swift_launcher"
 ---
 
