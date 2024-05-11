@@ -33,7 +33,7 @@ const VideoPlayer = ({ src, thumbnail }) => {
           )}
         </div>
       ) : (
-        <div className="fixed inset-0 p-28 bg-black bg-opacity-80 flex items-center justify-center z-50" onClick={handleOutsideClick}>
+        <div className="fixed inset-0 p-10 md:p-28 bg-black bg-opacity-80 flex items-center justify-center z-50" onClick={handleOutsideClick}>
           <video src={src} autoPlay controls className="w-full h-full" onClick={handleVideoClick}>
             Your browser does not support the video tag.
           </video>
