@@ -5,7 +5,7 @@ modified: 2020-02-02 16:49:47 +07:00
 description: A multi platform emoji/meme finder !
 icon: "/projects/retro-typer/icon.png"
 image: "/projects/retro-typer/bg.png"
-video: "/projects/retro-typer/RetroTyper.mov"
+video: "/projects/retro-typer/RetroTyper.mp4"
 linkPlaystore: ""
 site: ""
 linkRelease: "https://github.com/EyrisCrafts/retro_emojis/releases"

@@ -4,7 +4,7 @@ date: 2019-06-25 11:58:47 +07:00
 description: A Web app to test character prompts
 icon: "/projects/the-prompter/icon.png"
 image: "/projects/the-prompter/screenshot.png"
-video: "/projects/the-prompter/video.mov"
+video: "/projects/the-prompter/video.mp4"
 linkPlaystore: ""
 site: "https://prompter.eyriscrafts.com/"
 build: ""
@@ -28,7 +28,7 @@ article: "https://eyriscrafts.com/projects/the-prompter/the_prompter"
 
 <div class="flex flex-row justify-center mb-5">
   <video width="100%" height="300" controls>
-  <source src="/projects/the-prompter/video.mov" type="video/mp4">
+  <source src="/projects/the-prompter/video.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </div>
