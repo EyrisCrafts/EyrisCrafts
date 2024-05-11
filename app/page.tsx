@@ -68,7 +68,7 @@ export default function Home() {
           Software engineer with a keen interest in economy, science, and gaming
         </p>
 
-        <p className="text-sm font-semibold text-gray-700" >
+        <p className="text-sm font-semibold text-gray-300 dark:text-gray-700" >
           More about me
         </p>
 
