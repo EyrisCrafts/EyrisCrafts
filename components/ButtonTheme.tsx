@@ -7,12 +7,12 @@ export default function ButtonTheme() {
     const {theme, setTheme} = useTheme();
     
     const handleTheme = () => {
-        if (theme === 'dark') {
-            setTheme('light');
-            console.log("updating theme to light");
-        } else {
-            console.log("updating theme to dark");
+        if (theme === 'light') {
             setTheme('dark');
+            console.log("updating theme to dark");
+        } else {
+            console.log("updating theme to light");
+            setTheme('light');
         }
     }
 

@@ -18,6 +18,7 @@
         "TailwindCSS",
         "bootstrap",
         "Nginx",
+        "EnvoyProxy",
         "Vercel"
     ]
 }
