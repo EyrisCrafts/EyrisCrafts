@@ -4,7 +4,9 @@ import { IoReturnDownBack } from "react-icons/io5";
 export default function ButtonBack () {
 
     const handleBack = () => {
-        window.history.back();
+        // Go to url eyriscrafts.com
+        window.location.href = '/';
+        
     }
 
     return (
