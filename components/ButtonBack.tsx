@@ -6,7 +6,6 @@ export default function ButtonBack () {
     const handleBack = () => {
         // Go to url eyriscrafts.com
         window.location.href = '/';
-        
     }
 
     return (

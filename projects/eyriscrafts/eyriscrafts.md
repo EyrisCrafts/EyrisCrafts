@@ -1,7 +1,7 @@
 ---
 title: Eyriscrafts
 date: 2019-06-25 11:58:47 +07:00
-description: A feature rich android launcher in flutter
+description: A clean simple portfolio and personal website
 icon: "/projects/eyriscrafts/eggplant.webp"
 image: "/projects/eyriscrafts/screenshot.png"
 linkPlaystore: ""
