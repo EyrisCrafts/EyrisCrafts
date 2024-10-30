@@ -22,7 +22,7 @@
             "company": "Bridgelinx Technologies",
             "title": "Senior Mobile Engineer",
             "location": "Lahore",
-            "date": "Feb 2022 - Aug",
+            "date": "July 2021 - Aug",
             "description": "&#x2022 Designed and implemented Flutter app modules as per product requirements <br> &#x2022 Implemented nodejs APIs for cross- platform support <br> &#x2022 Migrated REST APIs to GraphQL <br> &#x2022 Developed a Flutter Web admin panel for streamlined WhatsApp Cloud API automation <br> &#x2022 Developed a Flask server for communication with WhatsApp serve",
             "techStack": [
                 "Flutter",
@@ -31,19 +31,6 @@
                 "Firebase Firestore",
                 "Firebase Analytics",
                 "ReactJS"
-            ]
-
-        },
-        
-        {
-            "id": "3",
-            "company": "Code Builderz",
-            "title": "Software Engineer",
-            "location": "Lahore",
-            "date": "Jul 2021 - Feb",
-            "description": "&#x2022 Responsible to develop the dating app with elegant code practices <br> &#x2022 Write elegant, documented and easy-to- read code <br> &#x2022 Implemented extensive explicit animations to improve app look and feel <br> &#x2022 Used MVVM architecture to develop complex user interfaces",
-            "techStack": [
-                "Flutter"
             ]
 
         }
