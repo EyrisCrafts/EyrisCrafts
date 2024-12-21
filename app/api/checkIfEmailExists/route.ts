@@ -15,9 +15,12 @@ export async function POST(req: NextRequest, res: Response) {
     }
     try {
         const user = await admin.auth().getUserByEmail(email);
-        return NextResponse.json({ exists: true });
+        const ids = user.providerData.map((provider) => {
+            return provider.uid;
+        });
+        return NextResponse.json({ exists: true, providers: ids });
     } catch (error) {
         return NextResponse.json({ exists: false });
     }
-    
+
 }
