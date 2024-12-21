@@ -19,4 +19,5 @@ export async function POST(req: NextRequest, res: Response) {
     } catch (error) {
         return NextResponse.json({ exists: false });
     }
+    
 }
