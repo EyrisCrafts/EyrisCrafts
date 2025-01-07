@@ -6,7 +6,7 @@
             "title": "Software Engineer",
             "location": "Oslo, Norway",
             "date": "Aug 2022 - Present",
-            "description": "&#x2022; Lead Mobile engineering for Android and iOS app deployment<br> &#x2022; Developed and deployed two Flutter Webapps with animations and scalable code <br> &#x2022; Implemented APIs and Cron jobs for secure cross-platform backend communication <br> &#x2022; Automated environment switching and data migrations using Python scripts <br> &#x2022; Established Firebase pubsub functions with OAuth email & sms sending for automated client reminders <br> &#x2022; Implemented text, audio & video Caching using a Vector database for significant performance improvements<br> &#x2022;  Architectured and implemented a scalable infrastructure using Google Compute Engine by spinning up on demand VMs",
+            "description": "&#x2022; Worked on developing the Simli Studio for avatar management and creation using NextJS and tailwind.<br> &#x2022;  Designed and implemented a scalable infrastructure on Google Compute Engine, incorporating load balancing to support 100+ concurrent users, ensuring system reliability and scalability using python and Traefik. <br> &#x2022;  Integrated FAISS vector database for efficient caching of text, audio, and video, resulting in a 30% cache hit rate and significantly reducing roundtrip latency in Python <br> &#x2022;  Automated client engagement processes by creating cron jobs using Firebase Functions, leading to a 20% reduction in manual intervention for client interactions. <br> &#x2022;  Developed automation scripts for email and SMS notifications, streamlining invoice issuance and improving client reminder workflows.<br> &#x2022;  Led Android and iOS app development with Flutter, increasing accessibility and engagement.<br> &#x2022; Implemented various endpoints in FastAPI, including streaming with HLS and ffmpeg.",
             "techStack": [
                 "NextJS",
                 "ReactJS",
@@ -23,14 +23,15 @@
             "title": "Senior Mobile Engineer",
             "location": "Lahore",
             "date": "July 2021 - Aug",
-            "description": "&#x2022 Designed and implemented Flutter app modules as per product requirements <br> &#x2022 Implemented nodejs APIs for cross- platform support <br> &#x2022 Migrated REST APIs to GraphQL <br> &#x2022 Developed a Flutter Web admin panel for streamlined WhatsApp Cloud API automation <br> &#x2022 Developed a Flask server for communication with WhatsApp serve",
+            "description": "&#x2022 Spearheaded the development of a carrier app for long-haul drivers, utilized by 150+ drivers, ensuring seamless functionality and user experience as the sole developer. <br> &#x2022 Migrated REST APIs to GraphQL for client-facing Flutter apps, improving data retrieval efficiency and enabling more flexible client-side queries <br> &#x2022 Integrated WhatsApp Cloud API to automate messaging for over 2,000 clients, significantly enhancing customer communication and reducing manual effort <br> &#x2022  Designed and implemented Flutter applications for ground crew truck drivers, enabling improved real-time communication and coordination, boosting operational efficiency <br> &#x2022  Developed webapps for internal sales management using NextJS",
             "techStack": [
                 "Flutter",
                 "Firebase Functions",
                 "Firebase Storage",
                 "Firebase Firestore",
                 "Firebase Analytics",
-                "ReactJS"
+                "ReactJS",
+                "NextJS"
             ]
 
         }
