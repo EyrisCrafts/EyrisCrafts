@@ -1,12 +1,13 @@
 import avatar from "../../../public/image.png";
 import ButtonBack from "@/components/ButtonBack";
-import { getSortedProjectsData, getProjectData } from "@/lib/projects";
+import { getSortedProjectsData, getProjectData, getProjectLinks } from "@/lib/projects";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import ButtonPersonal from "@/components/ButtonPersonal";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMdHome } from "react-icons/io";
 import { IoLogoGithub, IoLogoGooglePlaystore } from "react-icons/io5";
+import { FaLink } from "react-icons/fa";
 
 export default async function Project({ params }: { params: { projectId: string } }) {
     const projects = getSortedProjectsData();
@@ -17,6 +18,7 @@ export default async function Project({ params }: { params: { projectId: string 
     }
 
     const project = await getProjectData(projectId);
+    const projectLinks = getProjectLinks(projectId);
 
     return (
         <div className="max-w-screen-2xl mx-auto px-4 grid grid-cols-12 min-h-screen md:grid-cols-12">
@@ -32,6 +34,39 @@ export default async function Project({ params }: { params: { projectId: string 
                         icon={<IoMdHome size={24} />}
                         shouldOpenNewTab={false}
                     />
+                </div>
+                <div className="flex flex-row justify-center gap-3">
+                    {
+                        projectLinks.linkGithub !== "" &&
+                        (
+                            <ButtonPersonal
+                                text="Source"
+                                link={projectLinks.linkGithub}
+                                icon={<IoLogoGithub size={24} />}
+                            />
+                        )
+                    }
+                    {
+                        projectLinks.linkPlaystore !== "" &&
+                        (
+                            <ButtonPersonal
+                                text="Playstore"
+                                link={projectLinks.linkPlaystore}
+                                icon={<IoLogoGooglePlaystore size={24} />}
+                            />
+                        )
+                    }
+                    {
+                        projectLinks.linkRelease !== "" &&
+                        (
+                            <ButtonPersonal
+                                text="Link"
+                                link={projectLinks.linkRelease}
+                                icon={<FaLink size={24} />}
+                            />
+                        )
+                    }
+
                 </div>
                 <div className="p-5"></div>
                 <div className="markdown flex flex-col items-center">

@@ -10,6 +10,7 @@ import rehypeStringify from 'rehype-stringify';
 import remarkRehype from 'remark-rehype';
 
 import {marked} from 'marked';
+import { ProjectLinks } from './types';
 
 const projectsDirectory = path.join(process.cwd(), 'projects');
 
@@ -67,6 +68,18 @@ export function getSortedProjectsData() {
   });
 }
 
+export function getProjectLinks(id: string) : ProjectLinks {
+  const fullPath = path.join(projectsDirectory + `/${id}`, `${id}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const matterResult = matter(fileContents);
+
+  return {
+    linkBlog: matterResult.data.linkBlog || '',
+    linkGithub: matterResult.data.linkGithub || '',
+    linkPlaystore: matterResult.data.linkPlaystore || '',
+    linkRelease: matterResult.data.linkRelease || ''
+  }
+}
 
 export async function getProjectData(id: string) {
 
