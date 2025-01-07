@@ -1,6 +1,8 @@
 ---
 title: "Burn brightly and burn out: How software giants stand on flakey grounds" 
 date: 2024-05-12 11:58:47 +07:00
+description: How software giants stand on flakey grounds
+image: "/blogs/burn-brightly-and-burn-out/image.webp"
 ---
 
 <img src="/blogs/burn-brightly-and-burn-out/image.webp" alt="candleWick">

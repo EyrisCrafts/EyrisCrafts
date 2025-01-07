@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { BlogMeta } from "./types";
 
 const blogDirectory = path.join(process.cwd(), "blogs");
 
@@ -50,6 +51,19 @@ export function getSortedBlogsData() {
     }
   });
 }
+
+export function getBlogMeta(id: string) : BlogMeta {
+  const fullPath = path.join(blogDirectory + `/${id}`, `${id}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const matterResult = matter(fileContents);
+
+  return {
+    title: matterResult.data.title || '',
+    image: matterResult.data.image || '',
+    description: matterResult.data.description || '',
+  }
+}
+
 
 export async function getBlogData(id: string) {
   const fullPath = path.join(blogDirectory + `/${id}`, `${id}.md`);

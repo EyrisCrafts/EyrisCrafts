@@ -1,6 +1,8 @@
 ---
 title: "Breaking the Silicon Ceiling: Why AI's Future Lies Beyond Hardware" 
 date: 2024-06-22 11:58:47 +07:00
+description: Why AI's Future Lies Beyond Hardware
+image: "/blogs/Breaking-the-Silicon-Ceiling/image.webp"
 ---
 
 <img src="/blogs/Breaking-the-Silicon-Ceiling/image.webp" alt="candleWick">

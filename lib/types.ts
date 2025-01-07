@@ -5,3 +5,9 @@ export type ProjectLinks = {
     linkPlaystore: string;
     linkRelease: string;
 }
+
+export type BlogMeta = {
+    title: string;
+    image: string;
+    description: string;
+}
