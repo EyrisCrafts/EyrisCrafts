@@ -19,8 +19,24 @@ export const metadata: Metadata = {
         'https://eyriscrafts.com/public/blogs/Cloudflare-Workers-The-Free-Cron-Hack/image.png'
     ],
   },
-  
 }
+
+export async function generateMetadata() {
+    return {
+        title: 'Running free firebase notifications using cloudflare workers',
+        description: 'Because free is always better',
+        openGraph: {
+          title: 'Running free firebase notifications using cloudflare workers',
+          description: 'Because free is always better',
+          type: 'website',
+          url: 'https://eyriscrafts.com/blog/firebase-notifications-with-cloudflare-workers',
+          images: [
+              'https://eyriscrafts.com/public/blogs/Cloudflare-Workers-The-Free-Cron-Hack/image.png'
+          ],
+        },
+    };
+}
+
 
 export default function Page() {
     const privateKeySample = `
@@ -202,6 +218,7 @@ export default function Page() {
     `;
 
     return (
+
         <div className="max-w-screen-2xl px-4 md:px-16 mx-auto dark:bg-dark-1 bg-grey-3 flex flex-col py-10">
 
             <ButtonPersonal
