@@ -50,7 +50,7 @@ export default async function Project({ params }: { params: { blogId: string } }
 
     return (
         <>
-            <div className="max-w-screen-2xl mx-auto px-4 grid grid-cols-12 min-h-screen md:grid-cols-12">
+            <div className="font-serif max-w-screen-2xl mx-auto px-16 grid grid-cols-12 min-h-screen md:grid-cols-12 ">
 
                 <div className="col-span-12 md:col-span-7 lg:col-span-7  order-last md:order-none px-4 flex flex-col justify-center dark:bg-dark-1 bg-grey-3 ">
                     {/* Back button */}

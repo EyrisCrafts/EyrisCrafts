@@ -6,6 +6,13 @@ export default function ListBlogs() {
 
   return (
     <div className="flex flex-wrap gap-4">
+       <ItemBlog
+       special={true}
+          key="firebase-notifications-with-cloudflare-workers"
+          id="firebase-notifications-with-cloudflare-workers"
+          title="Running free firebase notifications cronjob using cloudflare workers"
+          date={"January 07, 2025"}
+        />
       {blogs.map((blog) => (
         <ItemBlog
           key={blog.id}

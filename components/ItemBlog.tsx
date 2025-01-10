@@ -5,13 +5,18 @@ interface ItemBlogProps {
   title: string;
   date: string;
   id: string;
+  special?: boolean;
 }
 
-export default function ItemBlog({ title, date, id }: ItemBlogProps) {
+export default function ItemBlog({ title, date, id, special = false }: ItemBlogProps) {
     const router = useRouter();
     function handleBlogclick() {
         // Navigate to project page
-        router.push(`/blogs/${id}`);
+        if (special){
+          router.push(`/blog/${id}`);
+        } else {
+          router.push(`/blogs/${id}`);
+        }
     }
     
   return (
