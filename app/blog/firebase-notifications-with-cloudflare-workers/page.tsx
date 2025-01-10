@@ -183,7 +183,7 @@ export default function Page() {
     `;
 
     return (
-        <div className="max-w-screen-2xl px-16 mx-auto dark:bg-dark-1 bg-grey-3 flex flex-col py-10">
+        <div className="max-w-screen-2xl px-4 md:px-16 mx-auto dark:bg-dark-1 bg-grey-3 flex flex-col py-10">
 
             <ButtonPersonal
                 text="Home"
@@ -191,21 +191,21 @@ export default function Page() {
                 icon={<IoMdHome size={24} />}
                 shouldOpenNewTab={false}
             />
-            <div className="flex justify-center">
-                <img src="/blogs/Cloudflare-Workers-The-Free-Cron-Hack/image.png" className="max-w-screen-lg" />
+            <div className="flex justify-center mt-5">
+                <img src="/blogs/Cloudflare-Workers-The-Free-Cron-Hack/image.png" className="max-w-screen-lg h-64 lg:h-130" />
             </div>
 
-            <div className="flex justify-center font-bold text-3xl mb-3  mt-10">
+            <div className="flex justify-center font-bold text-xl md:text-3xl mb-3  mt-10">
                 <div className="w-130 text-center">
                     Running free firebase notifications cronjob using cloudflare workers
                 </div>
             </div>
-            <div className="flex justify-center text-xl text-grey-2">
-                <div className="w-130 text-center">
+            <div className="flex justify-center text-lg md:text-xl text-grey-2">
+                <div className="w-130 text-center ">
                     Because free is always better
                 </div>
             </div>
-            <div className='max-w-screen-lg mx-auto mt-16'>
+            <div className='md:max-w-screen-lg mx-auto mt-16'>
                 <div className='text-2xl font-bold'>The main issue</div>
 
                 <div className='mt-4'>
@@ -226,71 +226,89 @@ export default function Page() {
                 <div className='mt-4 mb-2'>
                     Firstly, we will need some utility functions to parse the Firebase Private key which has the following format
                 </div>
-                <SyntaxHighlighter language="javascript" style={agate} customStyle={
-                    {
-                        backgroundColor: '#121212',
-                        padding: '0.1rem',
-                    }
-                }>
-                    {privateKeySample}
-                </SyntaxHighlighter>
+                <div className='overflow-x-auto w-[calc(100vw-2rem)] md:w-full'>
+                    <SyntaxHighlighter language="javascript" style={agate} customStyle={
+                        {
+                            backgroundColor: '#121212',
+                            padding: '0.1rem',
+                        }
+                    }>
+                        {privateKeySample}
+                    </SyntaxHighlighter>
+
+                </div>
                 <div className='mt-2 mb-2'>
                     Create a function called pemArrayToBuffer which will convert the pem key to a buffer
                 </div>
-                <SyntaxHighlighter language="typescript" style={agate} customStyle={
-                    {
-                        backgroundColor: '#121212',
-                        padding: '0.1rem',
-                    }
-                }>
-                    {pemArrayToBuffer}
-                </SyntaxHighlighter>
+                <div className='overflow-x-auto w-[calc(100vw-2rem)] md:w-full'>
+                    <SyntaxHighlighter language="typescript" style={agate} customStyle={
+                        {
+                            backgroundColor: '#121212',
+                            padding: '0.1rem',
+                        }
+                    }>
+                        {pemArrayToBuffer}
+                    </SyntaxHighlighter>
+
+                </div>
                 <div className='mt-2 mb-2'>
                     Then we need a function to import the private key into to a CryptoKey object
                 </div>
-                <SyntaxHighlighter language="typescript" style={agate} customStyle={
-                    {
-                        backgroundColor: '#121212',
-                        padding: '0.1rem',
-                    }
-                }>
-                    {importPrivateKey}
-                </SyntaxHighlighter>
-                
+                <div className='overflow-x-auto w-[calc(100vw-2rem)] md:w-full'>
+                    <SyntaxHighlighter language="typescript" style={agate} customStyle={
+                        {
+                            backgroundColor: '#121212',
+                            padding: '0.1rem',
+                        }
+                    }>
+                        {importPrivateKey}
+                    </SyntaxHighlighter>
+
+                </div>
+
                 <div className='mt-2 mb-2'>
                     Now we just generate the JWT token using the cryptoKey object
                 </div>
-                <SyntaxHighlighter language="typescript" style={agate} customStyle={
-                    {
-                        backgroundColor: '#121212',
-                        padding: '0.1rem',
-                    }
-                }>
-                    {generateJWT}
-                </SyntaxHighlighter>
+                <div className='overflow-x-auto w-[calc(100vw-2rem)] md:w-full'>
+                    <SyntaxHighlighter language="typescript" style={agate} customStyle={
+                        {
+                            backgroundColor: '#121212',
+                            padding: '0.1rem',
+                        }
+                    }>
+                        {generateJWT}
+                    </SyntaxHighlighter>
+
+                </div>
                 <div className='mt-2 mb-2'>
                     Finally, we generate the access token using the JWT token
                 </div>
-                <SyntaxHighlighter language="typescript" style={agate} customStyle={
-                    {
-                        backgroundColor: '#121212',
-                        padding: '0.1rem',
-                    }
-                }>
-                    {generateAccessToken}
-                </SyntaxHighlighter>
+                <div className='overflow-x-auto w-[calc(100vw-2rem)] md:w-full'>
+                    <SyntaxHighlighter language="typescript" style={agate} customStyle={
+                        {
+                            backgroundColor: '#121212',
+                            padding: '0.1rem',
+                        }
+                    }>
+                        {generateAccessToken}
+                    </SyntaxHighlighter>
+
+                </div>
                 <div className='mt-4 text-bold text-2xl'> How to use this in cloudflare worker</div>
                 <div className='mt-2 mb-2'>
                     Finally, combining everything, you can easily use the functions in the cloudflare worker to generate the access token and send the notification to the firebase server.
                 </div>
-                <SyntaxHighlighter language="typescript" style={agate} customStyle={
-                    {
-                        backgroundColor: '#121212',
-                        padding: '0.1rem',
-                    }
-                }>
-                    {combined}
-                </SyntaxHighlighter>
+                <div className='overflow-x-auto w-[calc(100vw-2rem)] md:w-full'>
+                    <SyntaxHighlighter language="typescript" style={agate} customStyle={
+                        {
+                            backgroundColor: '#121212',
+                            padding: '0.1rem',
+                        }
+                    }>
+                        {combined}
+                    </SyntaxHighlighter>
+
+                </div>
                 <div className='text-bold text-2xl mt-4'>
                     Conclusion
                 </div>
