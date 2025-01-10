@@ -8,8 +8,8 @@ export default function ListBlogs() {
     <div className="flex flex-wrap gap-4">
        <ItemBlog
        special={true}
-          key="firebase-notifications-with-cloudflare-workers"
-          id="firebase-notifications-with-cloudflare-workers"
+          key="firebase-notifications-using-cloudflare-workers"
+          id="firebase-notifications-using-cloudflare-workers"
           title="Running free firebase notifications cronjob using cloudflare workers"
           date={"January 07, 2025"}
         />
