@@ -218,7 +218,7 @@ export default function Page() {
 
     return (
         <>
-        <div className="max-w-screen-2xl px-4 md:px-16 mx-auto dark:bg-dark-1 bg-grey-3 flex flex-col py-10">
+        <div className="max-w-screen-2xl px-4 md:px-16 mx-auto dark:bg-dark-1 bg-grey-3 flex flex-col py-10 font-serif">
 
             <ButtonPersonal
                 text="Home"
