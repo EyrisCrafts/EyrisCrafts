@@ -4,7 +4,7 @@ import { ThemeProvider } from 'next-themes'
 
 export const metadata: Metadata = {
   title: "Waleed K. Nizamani",
-  description: "Personal website of EyrisCrafts",
+  description: "My Digital garden",
 };
 
 export default function RootLayout({
