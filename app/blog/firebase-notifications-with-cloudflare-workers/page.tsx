@@ -3,6 +3,25 @@ import ButtonPersonal from "@/components/ButtonPersonal";
 import { IoMdHome } from "react-icons/io";
 import { agate } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
+export async function generateMetadata({ params }: { params: { blogId: string } }) {
+
+    return {
+        title: "Running free firebase notifications using cloudflare workers",
+        description: "Because free is always better",
+        openGraph: {
+            title: "Running free firebase notifications using cloudflare workers",
+            description: "Because free is always better",
+            url: `https://eyriscrafts.com/blog/firebase-notifications-with-cloudflare-workers`,
+            images: [
+                {
+                    url: "/blogs/Cloudflare-Workers-The-Free-Cron-Hack/image.png", // Ensure this is a full URL
+                    alt: "Running free firebase notifications using cloudflare workers",
+                },
+            ],
+        },
+    };
+}
+
 export default function Page() {
     const privateKeySample = `
     -----BEGIN PRIVATE KEY-----
@@ -197,7 +216,7 @@ export default function Page() {
 
             <div className="flex justify-center font-bold text-xl md:text-3xl mb-3  mt-10">
                 <div className="w-130 text-center">
-                    Running free firebase notifications cronjob using cloudflare workers
+                    Running free firebase notifications using cloudflare workers
                 </div>
             </div>
             <div className="flex justify-center text-lg md:text-xl text-grey-2">
