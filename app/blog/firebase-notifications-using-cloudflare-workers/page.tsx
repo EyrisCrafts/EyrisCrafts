@@ -2,24 +2,24 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import ButtonPersonal from "@/components/ButtonPersonal";
 import { IoMdHome } from "react-icons/io";
 import { agate } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import type { Metadata } from 'next'
 
-export async function generateMetadata({ params }: { params: { blogId: string } }) {
-
-    return {
-        title: "Running free firebase notifications using cloudflare workers",
-        description: "Because free is always better",
-        openGraph: {
-            title: "Running free firebase notifications using cloudflare workers",
-            description: "Because free is always better",
-            url: `https://eyriscrafts.com/blog/firebase-notifications-with-cloudflare-workers`,
-            images: [
-                {
-                    url: "/blogs/Cloudflare-Workers-The-Free-Cron-Hack/image.png", // Ensure this is a full URL
-                    alt: "Running free firebase notifications using cloudflare workers",
-                },
-            ],
-        },
-    };
+ 
+export const metadata: Metadata = {
+  title: 'Running free firebase notifications using cloudflare workers',
+  description: 'Because free is always better',
+  keywords: ['firebase', 'cloudflare', 'workers', 'notifications'],
+  creator: 'Eyriscrafts',
+  openGraph: {
+    title: 'Running free firebase notifications using cloudflare workers',
+    description: 'Because free is always better',
+    type: 'website',
+    url: 'https://eyriscrafts.com/blog/firebase-notifications-with-cloudflare-workers',
+    images: [
+        'https://eyriscrafts.com/public/blogs/Cloudflare-Workers-The-Free-Cron-Hack/image.png'
+    ],
+  },
+  
 }
 
 export default function Page() {
