@@ -28,7 +28,6 @@ export async function generateMetadata() {
         openGraph: {
           title: 'Running free firebase notifications using cloudflare workers',
           description: 'Because free is always better',
-          type: 'website',
           url: 'https://eyriscrafts.com/blog/firebase-notifications-with-cloudflare-workers',
           images: [
               'https://eyriscrafts.com/blogs/Cloudflare-Workers-The-Free-Cron-Hack/image.png'
