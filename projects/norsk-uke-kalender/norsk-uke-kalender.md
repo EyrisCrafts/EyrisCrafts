@@ -7,7 +7,7 @@ image: "/projects/norsk-uke-kalender/bg.png"
 video: "/projects/norsk-uke-kalender/Recording.mp4"
 linkPlaystore: ""
 linkGithub: ""
-linkRelease: "norskukekalender.no"
+linkRelease: "https://norskukekalender.no"
 article: "http://eyriscrafts.com/projects/norsk-uke-kalender/norsk-uke-kalender"
 ---
 
