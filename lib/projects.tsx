@@ -109,6 +109,7 @@ export async function getProjectData(id: string) {
     date: matterResult.data.date || '',
     title: matterResult.data.title || '',
     image: matterResult.data.image || '',
+    video: matterResult.data.video || '',
     icon: matterResult.data.icon || '',
     description: matterResult.data.description || '',
     linkBlog: matterResult.data.linkBlog || '',
@@ -116,6 +117,7 @@ export async function getProjectData(id: string) {
     linkPlaystore: matterResult.data.linkPlaystore || '',
     linkAppstore: matterResult.data.linkAppstore || '',
     linkRelease: matterResult.data.linkRelease || '',
+    linkExternal: matterResult.data.linkExternal || '',
     contentHtml,
     
   };
