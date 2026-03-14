@@ -4,14 +4,12 @@ import { getSortedProjectsData } from "@/lib/projects";
 export default function ListProjects() {
     const projects = getSortedProjectsData();
 
-  return (
-    <div className="flex flex-wrap gap-4">
-      
-        {
-            projects.map((project) => (
+    return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {projects.map((project) => (
                 <ItemProject
-                key={project.id}
-                    id = {project.id}
+                    key={project.id}
+                    id={project.id}
                     title={project.title}
                     image={project.image}
                     video={project.video}
@@ -21,9 +19,10 @@ export default function ListProjects() {
                     linkGithub={project.linkGithub}
                     linkRelease={project.linkRelease}
                     linkPlaystore={project.linkPlaystore}
+                    linkAppstore={project.linkAppstore}
+                    linkExternal={project.linkExternal}
                 />
-            ))
-        }
-    </div>
-  );
+            ))}
+        </div>
+    );
 }

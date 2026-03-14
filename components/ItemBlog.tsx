@@ -9,24 +9,27 @@ interface ItemBlogProps {
 }
 
 export default function ItemBlog({ title, date, id, special = false }: ItemBlogProps) {
-    const router = useRouter();
-    function handleBlogclick() {
-        // Navigate to project page
-        if (special){
-          router.push(`/blog/${id}`);
-        } else {
-          router.push(`/blogs/${id}`);
-        }
+  const router = useRouter();
+
+  function handleBlogClick() {
+    if (special) {
+      router.push(`/blog/${id}`);
+    } else {
+      router.push(`/blogs/${id}`);
     }
-    
+  }
+
   return (
-    <div className="flex gap-4 w-full">
-      <div className="flex-none text-date-grey dark:text-blog-color w-32">{date}</div>
-      <div className="flex-grow">
-        <a className="text-sl text-blog-color dark:text-date-grey dark:hover:text-gray-100 hover:text-neutral-400 cursor-pointer" onClick={handleBlogclick} target="_blank" rel="noreferrer">
-          {title}
-        </a>
-      </div>
+    <div
+      className="flex items-baseline gap-4 w-full py-2.5 group cursor-pointer"
+      onClick={handleBlogClick}
+    >
+      <span className="flex-none text-xs text-text-muted w-28 tabular-nums">
+        {date}
+      </span>
+      <span className="text-sm text-text-secondary group-hover:text-accent transition-colors duration-200">
+        {title}
+      </span>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,37 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      width: {
-        "130": "32.5rem",
-      },
-      height: {
-        "130": "32.5rem",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        mono: ['"JetBrains Mono"', '"Fira Code"', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
       colors: {
+        page: '#0a0a0f',
+        surface: '#111118',
+        subtle: '#1a1a24',
+        border: '#2a2a35',
+        accent: '#4ade80',
+        'accent-dim': '#22c55e',
+        text: {
+          primary: '#d4d4d8',
+          secondary: '#71717a',
+          muted: '#52525b',
+        },
         'grey-1': '#515151',
         'grey-2': '#9D9D9D',
-        'grey-3': '#f5f5f5',
         'title-grey': '#999999',
-        'date-grey': '#D8D3D3',
         'blog-color': '#606060',
-        'card-bg': '#FAFAFA',
-        'smol-bg': '#A4A4A4',
-        'custom-bg': '#1B1C1F',
-        'custom-button-bg': "#0E0F11",
-        // Dark Mode
-        'dark-1': '#202124'
       },
-      boxShadow: {
-        project: '1px 1px 4px rgba(0, 0, 0, 0.1)',
-        projectHovered: '4px 4px 7px rgba(0, 0, 0, 0.1)',
-        projectLink: '1px 1px 6px rgba(0, 0, 0, 0.1)',
-        projectLinkHovered: '1px 1px 6px rgba(0, 0, 0, 0.2)',
-      }
     },
   },
   plugins: [],

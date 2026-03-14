@@ -1,18 +1,19 @@
 import { getSortedBlogsData } from "@/lib/blogs";
 import ItemBlog from "./ItemBlog";
 import { readableDate } from "@/utils/utils";
+
 export default function ListBlogs() {
   const blogs = getSortedBlogsData();
 
   return (
-    <div className="flex flex-wrap gap-4">
-       <ItemBlog
-       special={true}
-          key="firebase-notifications-and-cloudflare-workers"
-          id="firebase-notifications-and-cloudflare-workers"
-          title="Running free firebase notifications cronjob using cloudflare workers"
-          date={"January 07, 2025"}
-        />
+    <div className="flex flex-col divide-y divide-subtle">
+      <ItemBlog
+        special={true}
+        key="firebase-notifications-and-cloudflare-workers"
+        id="firebase-notifications-and-cloudflare-workers"
+        title="Running free firebase notifications cronjob using cloudflare workers"
+        date={"January 07, 2025"}
+      />
       {blogs.map((blog) => (
         <ItemBlog
           key={blog.id}

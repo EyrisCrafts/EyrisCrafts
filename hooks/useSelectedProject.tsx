@@ -12,6 +12,7 @@ export class Project {
     public linkBlog: string,
     public linkGithub: string,
     public linkPlaystore: string,
+    public linkAppstore: string,
     public linkRelease: string,
     public contentHtml: string
   ) {
@@ -24,6 +25,7 @@ export class Project {
     this.linkBlog = linkBlog;
     this.linkGithub = linkGithub;
     this.linkPlaystore = linkPlaystore;
+    this.linkAppstore = linkAppstore;
     this.linkRelease = linkRelease;
     this.contentHtml = contentHtml;
   }
@@ -44,6 +46,7 @@ export const useSelectedProjectStore = create<ProjectProps>((set) => ({
     linkBlog: "",
     linkGithub: "",
     linkPlaystore: "",
+    linkAppstore: "",
     linkRelease: "",
     contentHtml: "",
   },

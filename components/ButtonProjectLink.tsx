@@ -1,23 +1,20 @@
-import Link from "next/link";
-
 interface Props {
   title: string;
   link: string;
 }
 
 export default function ButtonProjectLink({ title, link }: Props) {
-  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => { 
+  const handleClick = (event: React.MouseEvent<HTMLSpanElement>) => {
     window.open(link, "_blank");
     event.stopPropagation();
-  }
-  
-    return (
-    <div
-      onClick={handleClick}
+  };
 
-      className="rounded-md card-bg transition duration-300 shadow-projectLink hover:shadow-projectLinkHovered px-3 py-1 text-xs font-bold text-smol-bg dark:bg-custom-button-bg dark:hover:bg-slate-900"
+  return (
+    <span
+      onClick={handleClick}
+      className="inline-block px-2.5 py-1 text-[11px] font-medium rounded text-text-secondary bg-page hover:text-accent transition-colors duration-200 cursor-pointer"
     >
       {title}
-    </div>
+    </span>
   );
 }

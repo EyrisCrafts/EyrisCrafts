@@ -48,7 +48,9 @@ export function getSortedProjectsData() {
           linkBlog: matterResult.data.linkBlog || '',
           linkGithub: matterResult.data.linkGithub || '',
           linkPlaystore: matterResult.data.linkPlaystore || '',
-          linkRelease: matterResult.data.linkRelease || ''
+          linkAppstore: matterResult.data.linkAppstore || '',
+          linkRelease: matterResult.data.linkRelease || '',
+          linkExternal: matterResult.data.linkExternal || '',
           
         };
 
@@ -77,6 +79,7 @@ export function getProjectLinks(id: string) : ProjectLinks {
     linkBlog: matterResult.data.linkBlog || '',
     linkGithub: matterResult.data.linkGithub || '',
     linkPlaystore: matterResult.data.linkPlaystore || '',
+    linkAppstore: matterResult.data.linkAppstore || '',
     linkRelease: matterResult.data.linkRelease || ''
   }
 }
@@ -111,6 +114,7 @@ export async function getProjectData(id: string) {
     linkBlog: matterResult.data.linkBlog || '',
     linkGithub: matterResult.data.linkGithub || '',
     linkPlaystore: matterResult.data.linkPlaystore || '',
+    linkAppstore: matterResult.data.linkAppstore || '',
     linkRelease: matterResult.data.linkRelease || '',
     contentHtml,
     

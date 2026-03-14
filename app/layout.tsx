@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from 'next-themes'
 
 export const metadata: Metadata = {
   title: "Waleed K. Nizamani",
@@ -13,9 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="dark">
-      <body className="bg-grey-3 dark:bg-dark-1 transition duration-300">
-      <ThemeProvider attribute="class">{children}</ThemeProvider>
+    <html lang="en">
+      <body className="bg-page text-text-primary">
+        {children}
       </body>
     </html>
   );

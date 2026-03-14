@@ -3,6 +3,7 @@ export type ProjectLinks = {
     linkBlog: string;
     linkGithub: string;
     linkPlaystore: string;
+    linkAppstore: string;
     linkRelease: string;
 }
 
